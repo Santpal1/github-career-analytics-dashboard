@@ -2,7 +2,7 @@ const axios = require('axios');
 require('dotenv').config();
 
 // Default fallback API key if not specified in .env
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || 'AIzaSyBqL0ua2KAAHXD7SOn5W7UgRMp1mVzyaUM';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
 const MODEL = 'gemini-2.5-flash';
 
 async function generateCareerReview(userData, reposData, metrics) {
